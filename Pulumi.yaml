@@ -1,0 +1,3 @@
+name: pulumi-blue-green
+runtime: nodejs
+description: A Kubernetes blue green deployment using Pulumi and Typescript
