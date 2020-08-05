@@ -56,7 +56,7 @@ const deploymentV2 = new k8s.apps.v1.Deployment("app-v2", {
 // Create a service load balancer.
 const service = new k8s.core.v1.Service("app", {
     spec: {
-        selector: appLabelsV1,
+        selector: appLabelsV2,
         ports: [{ port: 80, targetPort: 8080 }],
         type: "LoadBalancer",
     },
